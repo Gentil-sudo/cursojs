@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+<style>
+  body {
+background: #0051bb ;
+
+color: whitesmoke ;
+font: normal 20 pt Arial;
+  }
+</style>
+  </head>
+<body>
+  <h1>Iniciando estudos com DOM </h1>  
+  <p>Aqui está o resultado </p>
+  <p>Aprendendo <strong>DOM</strong> em JavaScript.</p> 
+  <div name = "msg">Clique em mim</div>
+
+<script>
+var p1 = window.document.getElementsByTagName('p')[0] // Esses colchetes no final são usados para selecionar paragrafo //
+// window.document.write('Esta escrito assim:' + p1.innerText) // mudar o texto (editar) //
+p1.style.color = 'white' 
+/*var d = window.document.getElementById('msg') | // selecionando elemento pelo ID
+d.style.background = 'green'  | // mudar a cor de fundo pelo ID 
+d.innerText = 'Estou aguardando....'
+window.document.getElementById('msg').innerText - 'Olá Mundo!' 
+*/
+var d = window.document.querySelector('div#msg') // Clase = | '.' |  ID = | '#' |
+</script>
+</body>
+</html>

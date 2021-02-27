@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo Eleitoral</title>
+</head>
+<body>
+    <h1>Quantos anos você tem?</h1>
+    Idade: <input type="text" name="idade" id="idade"> de Idade.
+    <input type="button" value="Verificar" onclick="calcular()" >
+    <div id = 'res'></div>
+    <script>
+function calcular () {
+var idade = window.document.getElementById("Idade")
+var res = window.document.getElementById('res')
+var voto = String (idade.value)
+
+if (idade < 18)  {
+console.log('Não Vota!')
+} else {
+ if (idade >= 16 && idade < 18){
+     console.log('Voto Opicional')
+ }
+}
+}
+
+    </script>
+</body>
+</html>
